@@ -1,0 +1,8 @@
+/* src/components/ui/inputs/UserDataInput/UserDataInput.module.css */
+
+.UserDataInput {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

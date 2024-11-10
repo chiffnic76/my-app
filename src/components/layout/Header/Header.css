@@ -1,0 +1,101 @@
+/* src/components/layout/Header/Header.css */
+/* Header principal */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.menu-button:hover {
+  color: #f3a712;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Animation au survol */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+.nav-link:hover {
+  color: #f3a712;
+}
+
+.welcome-message {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Bouton de fermeture du sidebar */
+.close-button {
+  background: none;
+  border: none;
+  color: #f3a712;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Message pour l'utilisateur non connecté */
+.not-logged-in {
+  color: #f0f0f0;
+  font-size: 1rem;
+  padding: 1rem;
+}

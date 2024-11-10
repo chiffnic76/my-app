@@ -1,0 +1,14 @@
+/* src/components/pages/TicketsPage/TicketsPage.css */
+
+.tickets-page {
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+
+.tickets-page h2 {
+  color: #333;
+}

@@ -1,0 +1,23 @@
+/* src/components/ui/buttons/LogoutButton/LogoutButton.module.css */
+
+.logoutButton {
+    background-color: #e74c3c; /* Rouge vif */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logoutButton:hover {
+    background-color: #c0392b; /* Rouge un peu plus foncé au survol */
+    transform: scale(1.05);
+}
+
+.logoutButton:active {
+    background-color: #a93226; /* Rouge encore plus foncé lors du clic */
+    transform: scale(0.95);
+}

@@ -1,0 +1,47 @@
+/* src/components/layout/SidebarMenu/SidebarMenu.css */
+/* Style général de la sidebar */
+.sidebar {
+  position: fixed;
+  top: 92px;
+  bottom: 20px;
+  left: 20px;
+  height: 90%;
+  width: 250px;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Liste d'éléments de la sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Adaptation pour les écrans de téléphone */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 250px; /* Réduit la largeur sur les écrans plus petits */
+    top: 60px;    /* Ajuste la hauteur du haut si nécessaire */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 250px; /* Réduit encore la largeur pour les très petits écrans */
+  }
+}

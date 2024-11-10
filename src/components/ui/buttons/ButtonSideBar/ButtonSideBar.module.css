@@ -1,0 +1,40 @@
+/* Style des boutons */
+.ButtonSideBar {
+  width: 80%;
+  padding: 10px 20px;
+  color: #ecf0f1;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ButtonSideBar:hover {
+  background-color: #1abc9c;
+  transform: scale(1.05);
+}
+
+.ButtonSideBar:active {
+  background-color: #16a085;
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+
+  .ButtonSideBar {
+    font-size: 0.9em; /* Réduit la taille de la police pour s'adapter */
+    padding: 8px 15px;
+    width: 90%; /* Augmente légèrement la largeur pour remplir plus l’espace */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .ButtonSideBar {
+    font-size: 0.85em; /* Diminue un peu plus la taille du texte */
+  }
+}

@@ -1,0 +1,13 @@
+/* src/components/pages/EquipmentsPage/EquipmentsPage.css */
+.equipments-page {
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+
+.equipments-page h2 {
+  color: #333;
+}
